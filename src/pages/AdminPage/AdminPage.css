@@ -1,0 +1,27 @@
+span.MuiTab-wrapper:hover {
+    color: orange;
+    text-decoration: none !important;
+}
+
+a#nav-tab-1:hover {
+    color: orange;
+    text-decoration: none !important;
+
+}
+a#nav-tab-2:hover {
+    color: orange;
+    text-decoration: none !important;
+
+}
+a#nav-tab-0:hover {
+    color: orange;
+    text-decoration: none !important;
+
+}
+span.MuiTab-wrapper {
+    color: #000;
+}
+
+.MuiTabs-indicator {
+    background-color: #fff !important;
+}
