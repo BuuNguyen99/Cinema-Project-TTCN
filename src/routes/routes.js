@@ -109,22 +109,22 @@ const routes = [
     main: () => <Item4 />,
   },
   {
-    path: "/reviews/5f9c11b65352ac28cc47c6eb",
+    path: "/reviews/5fa3fcce9faf540468468879",
     exact: false,
     main: () => <ItemReview1 />,
   },
   {
-    path: "/reviews/5f9c11b65352ac28cc47c6ee",
+    path: "/reviews/5fa3fcce9faf54046846887a",
     exact: false,
     main: () => <ItemReview2 />,
   },
   {
-    path: "/reviews/5f9c11b65352ac28cc47c6ec",
+    path: "/reviews/5fa3fcce9faf54046846887b",
     exact: false,
     main: () => <ItemReview3 />,
   },
   {
-    path: "/reviews/5f9c11b65352ac28cc47c6ed",
+    path: "/reviews/5fa3fcce9faf54046846887c",
     exact: false,
     main: () => <ItemReview4 />,
   },

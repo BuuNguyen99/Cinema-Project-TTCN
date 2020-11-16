@@ -11,9 +11,6 @@ function ItemReviewMovie(props) {
   const [number, setNumber] = useState(props.reviewMovie.vote.numberOfReviews);
   const dispatch = useDispatch();
 
-  const reviewMovie =
-    useSelector((state) => state.reducerSupport.support, []) || [];
-
   const onRating = () => {
     if (showRating === false) {
       setShowRating(true);
@@ -65,8 +62,8 @@ function ItemReviewMovie(props) {
       <div className="col-8 col-md-7 col-lg-8 col-xl-9">
         <div className="row">
           <div className="col-md-12">
-            <Link to={`/${reviewMovie.id}`} className="linkReviewMovie">
-              <h5 className="title">{reviewMovie.title}</h5>
+            <Link to={`reviews/${props.reviewMovie._id}`} className="linkReviewMovie">
+              <h5 className="title">{props.reviewMovie.title}</h5>
             </Link>
           </div>
         </div>
