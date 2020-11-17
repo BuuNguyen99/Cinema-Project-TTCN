@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ItemReviewMovie.css";
 import Rating from "material-ui-rating";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { actRatingItemReviewMovieRequest } from "../../../actions/action";
 import { Link } from "react-router-dom";
 
@@ -10,6 +10,7 @@ function ItemReviewMovie(props) {
   const [rate, setRate] = useState(props.reviewMovie.vote.rate);
   const [number, setNumber] = useState(props.reviewMovie.vote.numberOfReviews);
   const dispatch = useDispatch();
+
 
   const onRating = () => {
     if (showRating === false) {
@@ -50,7 +51,7 @@ function ItemReviewMovie(props) {
   return (
     <div className="row mt-3 linkReivew">
       <div className=" col-4 col-md-5 col-lg-4 col-xl-3">
-        <Link to={`reviews/${reviewMovie._id}`} className="linkReviewMovie">
+        <Link to={`reviews/${props.reviewMovie._id}`} className="linkReviewMovie">
           <img
             style={size}
             className="imgMovie"
